@@ -1,54 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>E-commerce Store</title>
+    <title>Social Media App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Simple Store</h1>
-        <div id="cart-count">Cart: 0</div>
-    </header>
-
-    <main>
-        <div id="products" class="product-grid">
-            <!-- Static Product Items -->
-            <div class="product">
-                <h3>Laptop</h3>
-                <p>$999.99</p>
-                <button onclick="addToCart(1, 'Laptop', 999.99)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Smartphone</h3>
-                <p>$599.99</p>
-                <button onclick="addToCart(2, 'Smartphone', 599.99)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Headphones</h3>
-                <p>$99.99</p>
-                <button onclick="addToCart(3, 'Headphones', 99.99)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Smart Watch</h3>
-                <p>$199.99</p>
-                <button onclick="addToCart(4, 'Smart Watch', 199.99)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <h3>Wireless Mouse</h3>
-                <p>$29.99</p>
-                <button onclick="addToCart(5, 'Wireless Mouse', 29.99)">Add to Cart</button>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Social Media App</h1>
         
-        <div id="cart" class="cart">
-            <h2>Shopping Cart</h2>
-            <div id="cart-items"></div>
-            <div id="cart-total">Total: $0.00</div>
-            <button id="checkout">Checkout</button>
+        <div class="post-form">
+            <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+            <button onclick="createPost()">Post</button>
         </div>
-    </main>
 
+        <div id="postsContainer"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
